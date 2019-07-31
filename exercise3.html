@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Exercise 3</title>
+
+</head>
+<body>
+	<style type="text/css">
+		.image-list{
+			list-style: none;
+		}
+
+		.image-list li:before{
+			content: "";
+		    background: url(unicorn.png) no-repeat;
+		    background-size: 100% 100%;
+		    width: 32px;
+		    height: 32px;
+		    display: inline-block;
+		    margin-right:10px;
+		}
+
+		.image-list li{
+			min-height: 36px; /*minimum height of the content*/
+		    display: inline-flex; /*inline-flexible*/
+		    align-items: center; 
+		}
+	</style>
+
+	<div><h2>Playing with unordered list</h2></div>
+
+	<ul>
+		<li>Default bullet point</li>
+		<li style="list-style-type: circle;">Circle bullet point</li>
+		<li style="list-style-type: square;">Square bullet point</li>
+		<li>
+			<ul>
+				<li>Nested List 1<sup>st</sup></li><!-- superscript -->
+				<li>Nested List 2<sup>nd</sup></li>
+				<li>Nested List 3<sup>rd</sup></li>
+			</ul>
+		</li>	
+	</ul>
+
+	<div><h2>Playing with ordered list</h2></div>
+
+	<ol>
+		<li>Default number</li>
+		<li style="list-style-type: lower-alpha;">Alpha</li>
+		<li style="list-style-type: lower-roman;">Roman</li>
+		<li>
+			<ul>
+				<li>Nested List 1<sub>st</sub></li><!-- subscript -->
+				<li>Nested List 2<sub>nd</sub></li>
+				<li>Nested List 3<sub>rd</sub></li>
+			</ul>
+		</li>	
+	</ol>
+
+
+	<div><h2>Changing bullets points to image</h2></div>
+
+	<ul class="image-list">
+		<li><span>Image list style</span></li>
+	</ul>
+
+	<div style="clear:both;font-size:10px;"> Footer</div>
+</body>
+</html>
